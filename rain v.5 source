@@ -1,0 +1,74 @@
+-- Rain v.5
+local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/shlexware/Rayfield/main/source'))()
+
+local Window = Rayfield:CreateWindow({
+    Name = "rain v.5",
+    LoadingTitle = "rain",
+    LoadingSubtitle = "by inyuhbhutt",
+    ConfigurationSaving = {
+       Enabled = true,
+       FolderName = nil, -- Create a custom folder for your hub/game
+       FileName = "key system"
+    },
+    Discord = {
+       Enabled = false,
+       Invite = "noinvitelink", -- The Discord invite code, do not include discord.gg/. E.g. discord.gg/ABCD would be ABCD.
+       RememberJoins = true -- Set this to false to make them join the discord every time they load it up
+    },
+    KeySystem = true, -- Set this to true to use our key system
+    KeySettings = {
+       Title = "Rain v5",
+       Subtitle = "Key System",
+       Note = "Join the discord (NO)",
+       FileName = "",
+       SaveKey = true,
+       GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
+       Key = "bhutt"
+    }
+ })
+ local Tab = Window:CreateTab("Main", 4483362458) -- Title, Image
+ local Section = Tab:CreateSection("Main")
+
+ local Button = Tab:CreateButton({
+    Name = "night khols",
+    Callback = function()
+        loadstring(game:HttpGet('https://gist.githubusercontent.com/ScaleneSoap9803/3828d1ec1bec480b60f41b29e346bb93/raw/6614198753a67ab35d7970b6a8acb6ea9d30ce34/Night%2520Kohls%2520Beta'))()
+    end,
+ })
+
+ local Button = Tab:CreateButton({
+    Name = "kick script",
+    Callback = function()
+        loadstring(game:HttpGet(('https://raw.githubusercontent.com/Tech-187/Obfuscated-art/main/v3-newmode-lite'),true))() 
+    end,
+ })
+
+ local Button = Tab:CreateButton({
+    Name = "ntos admin",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/TwomadJR/nto/main/admiin"))()
+    end,
+ })
+
+ local Button = Tab:CreateButton({
+    Name = "dark khols",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Stefanuk12/ROBLOX/master/Games/Kohls%20Admin%20House/DarkKohls/GUI.lua"))()
+    end,
+ })
+
+ local Button = Tab:CreateButton({
+    Name = "scv2",
+    Callback = function()
+        loadstring(game:HttpGet(('https://raw.githubusercontent.com/Qltxi/SCV2/main/Obfuscated%20SCV2-NP'),true))()
+    end,
+ })
+
+ local Button = Tab:CreateButton({
+    Name = "iy",
+    Callback = function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+    end,
+ })
+ 
+ Rayfield:LoadConfiguration()
