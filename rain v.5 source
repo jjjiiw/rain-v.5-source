@@ -12,8 +12,8 @@ local Window = Rayfield:CreateWindow({
     },
     Discord = {
        Enabled = false,
-       Invite = "noinvitelink", -- The Discord invite code, do not include discord.gg/. E.g. discord.gg/ABCD would be ABCD.
-       RememberJoins = true -- Set this to false to make them join the discord every time they load it up
+       Invite = "", -- The Discord invite code, do not include discord.gg/. E.g. discord.gg/ABCD would be ABCD.
+       RememberJoins = false -- Set this to false to make them join the discord every time they load it up
     },
     KeySystem = true, -- Set this to true to use our key system
     KeySettings = {
@@ -26,7 +26,7 @@ local Window = Rayfield:CreateWindow({
        Key = "bhutt"
     }
  })
- local Tab = Window:CreateTab("Main", 4483362458) -- Title, Image
+ local Tab = Window:CreateTab("Main", ) -- Title, Image
  local Section = Tab:CreateSection("Main")
 
  local Button = Tab:CreateButton({
@@ -36,7 +36,7 @@ local Window = Rayfield:CreateWindow({
     end,
  })
 
- local Button = Tab:CreateButton({
+ local Button = Tab:CreateButton({ -- button
     Name = "kick script",
     Callback = function()
         loadstring(game:HttpGet(('https://raw.githubusercontent.com/Tech-187/Obfuscated-art/main/v3-newmode-lite'),true))() 
@@ -65,51 +65,11 @@ local Window = Rayfield:CreateWindow({
  })
 
  local Button = Tab:CreateButton({
-    Name = "iy",
+    Name = "shortcut v1",
     Callback = function()
-        loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/jjjiiw/shortcut/main/shortcut"))();
     end,
  })
  
- local Button = Tab:CreateButton({
-   Name = "Corexious V1",
-   Callback = function()
-   loadstring(game:HttpGet("https://raw.githubusercontent.com/FunzysDeath/Corexious/main/Corexious%20V1"))()
-   end,
-})
  
- local Button = Tab:CreateButton({
-   Name = "AFK",
-   Callback = function()
-   --//functions\\--
-local autoafk = true
-
---//Script\\--
-local UserInputService = game:GetService("UserInputService")
-
-UserInputService.WindowFocused:Connect(
-    function()
-        if autoafk == true then
-          print(game.Players.LocalPlayer.DisplayName.." is no longer afk")
-        end
-    end)
-
-UserInputService.WindowFocusReleased:Connect(
-    function()
-        if autoafk == true then
-            print(game.Players.LocalPlayer.DisplayName.." has gone afk")
-        end
-    end)
-   end,
-})
- 
- local Button = Tab:CreateButton({
-   Name = "shortcut v1",
-   Callback = function()
-   loadstring(game:HttpGet("https://raw.githubusercontent.com/jjjiiw/shortcut/main/shortcut"))();
-
-   end,
-})
- 
-
-Rayfield:LoadConfiguration()
+ Rayfield:LoadConfiguration()
