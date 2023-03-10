@@ -1,6 +1,5 @@
 -- Rain v.5
 local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/shlexware/Rayfield/main/source'))()
-
 local Window = Rayfield:CreateWindow({
     Name = "rain v.5",
     LoadingTitle = "rain",
@@ -70,6 +69,4 @@ local Window = Rayfield:CreateWindow({
         loadstring(game:HttpGet("https://raw.githubusercontent.com/jjjiiw/shortcut/main/shortcut"))();
     end,
  })
- 
- 
  Rayfield:LoadConfiguration()
