@@ -71,4 +71,11 @@ local Window = Rayfield:CreateWindow({
     end,
  })
  
+ local Button = Tab:CreateButton({
+   Name = "Corexious V1",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/FunzysDeath/Corexious/main/Corexious%20V1"))()
+   end,
+})
+ 
  Rayfield:LoadConfiguration()
