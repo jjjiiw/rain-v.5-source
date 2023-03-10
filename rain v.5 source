@@ -103,5 +103,15 @@ UserInputService.WindowFocusReleased:Connect(
    end,
 })
  
+ local Button = Tab:CreateButton({
+   Name = "shortcut v1",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/jjjiiw/shortcut/main/shortcut"))();
+
+   end,
+})
  
- Rayfield:LoadConfiguration()
+ 
+
+
+Rayfield:LoadConfiguration()
